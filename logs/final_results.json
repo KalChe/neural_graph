@@ -1,0 +1,219 @@
+{
+  "training": {
+    "best_val_loss": 0.008958113928621177,
+    "final_epoch": 1,
+    "history": {
+      "train_loss": [
+        0.013435732372211342
+      ],
+      "val_loss": [
+        0.008958113928621177
+      ],
+      "train_detection_acc": [
+        0.49108961303462323
+      ],
+      "val_detection_acc": [
+        0.12759643916913946
+      ],
+      "train_forecast_acc": [
+        0.48879837067209775
+      ],
+      "val_forecast_acc": [
+        0.16379821958456972
+      ],
+      "learning_rate": [
+        0.001
+      ],
+      "epoch_time": [
+        119.96958589553833
+      ]
+    }
+  },
+  "rl": {
+    "final_stats": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 861,
+      "false_negatives": 139,
+      "total_reward": -6089.0,
+      "accuracy": 0.861,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "precision": 0.0
+    },
+    "num_episodes": 20
+  },
+  "compression": {
+    "original_params": 666084,
+    "compressed_params": 415140,
+    "compression_ratio": 1.604480416245122,
+    "original_size_mb": 2.5459976196289062,
+    "compressed_size_mb": 1.5887222290039062,
+    "layer_stats": {
+      "layers_compressed": 14,
+      "total_original_params": 597344,
+      "total_compressed_params": 346208,
+      "overall_compression_ratio": 1.725390516683612,
+      "per_layer_stats": {
+        "temporal_encoder.4": {
+          "original_shape": [
+            32,
+            16,
+            5
+          ],
+          "rank": 16,
+          "original_params": 2592,
+          "compressed_params": 1824,
+          "compression_ratio": 1.4210526315789473
+        },
+        "temporal_encoder.8": {
+          "original_shape": [
+            64,
+            32,
+            3
+          ],
+          "rank": 32,
+          "original_params": 6208,
+          "compressed_params": 5184,
+          "compression_ratio": 1.1975308641975309
+        },
+        "node_feature_proj.0": {
+          "original_shape": [
+            256,
+            2048
+          ],
+          "rank": 128,
+          "original_params": 524544,
+          "compressed_params": 295168,
+          "compression_ratio": 1.777103209019948
+        },
+        "node_feature_proj.3": {
+          "original_shape": [
+            64,
+            256
+          ],
+          "rank": 32,
+          "original_params": 16448,
+          "compressed_params": 10304,
+          "compression_ratio": 1.5962732919254659
+        },
+        "spatial_gnn.input_proj": {
+          "original_shape": [
+            64,
+            64
+          ],
+          "rank": 32,
+          "original_params": 4160,
+          "compressed_params": 4160,
+          "compression_ratio": 1.0
+        },
+        "tcn.network.0.conv1.conv": {
+          "original_shape": [
+            32,
+            64,
+            3
+          ],
+          "rank": 16,
+          "original_params": 6176,
+          "compressed_params": 3616,
+          "compression_ratio": 1.7079646017699115
+        },
+        "tcn.network.0.conv2.conv": {
+          "original_shape": [
+            32,
+            32,
+            3
+          ],
+          "rank": 16,
+          "original_params": 3104,
+          "compressed_params": 2080,
+          "compression_ratio": 1.4923076923076923
+        },
+        "tcn.network.0.residual": {
+          "original_shape": [
+            32,
+            64,
+            1
+          ],
+          "rank": 16,
+          "original_params": 2080,
+          "compressed_params": 1568,
+          "compression_ratio": 1.3265306122448979
+        },
+        "tcn.network.1.conv1.conv": {
+          "original_shape": [
+            64,
+            32,
+            3
+          ],
+          "rank": 32,
+          "original_params": 6208,
+          "compressed_params": 5184,
+          "compression_ratio": 1.1975308641975309
+        },
+        "tcn.network.1.conv2.conv": {
+          "original_shape": [
+            64,
+            64,
+            3
+          ],
+          "rank": 32,
+          "original_params": 12352,
+          "compressed_params": 8256,
+          "compression_ratio": 1.496124031007752
+        },
+        "tcn.network.1.residual": {
+          "original_shape": [
+            64,
+            32,
+            1
+          ],
+          "rank": 16,
+          "original_params": 2112,
+          "compressed_params": 1600,
+          "compression_ratio": 1.32
+        },
+        "tcn.network.2.conv1.conv": {
+          "original_shape": [
+            32,
+            64,
+            3
+          ],
+          "rank": 16,
+          "original_params": 6176,
+          "compressed_params": 3616,
+          "compression_ratio": 1.7079646017699115
+        },
+        "tcn.network.2.conv2.conv": {
+          "original_shape": [
+            32,
+            32,
+            3
+          ],
+          "rank": 16,
+          "original_params": 3104,
+          "compressed_params": 2080,
+          "compression_ratio": 1.4923076923076923
+        },
+        "tcn.network.2.residual": {
+          "original_shape": [
+            32,
+            64,
+            1
+          ],
+          "rank": 16,
+          "original_params": 2080,
+          "compressed_params": 1568,
+          "compression_ratio": 1.3265306122448979
+        }
+      }
+    }
+  },
+  "config": {
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "epochs": 1,
+    "device": "cuda"
+  },
+  "timestamp": "2026-01-01T04:46:01.755856"
+}

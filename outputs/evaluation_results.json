@@ -1,0 +1,16 @@
+{
+  "threshold": 0.3,
+  "accuracy": 0.9074321317311972,
+  "sensitivity": 0.9024390243902439,
+  "specificity": 0.9081632653061225,
+  "precision": 0.5899772209567198,
+  "f1": 0.7134986225895317,
+  "auc_roc": 0.962523999146697,
+  "tp": 259,
+  "tn": 1780,
+  "fp": 180,
+  "fn": 28,
+  "total_samples": 2247,
+  "seizure_samples": 287,
+  "normal_samples": 1960
+}
